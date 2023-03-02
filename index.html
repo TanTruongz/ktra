@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<script>
+    function createLogin() { 
+    // Get user input
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+ 
+    // Validate user input
+    if (username == "" || password == "") {
+        alert("Username and password must be filled out");
+        return;
+    }
+    if (username == "admin" || password == "admin"){
+        alert("Account created successfully!");
+    }
+}
+</script>
 <body>
     <label>Ten Dang Nhap
     <input type="text" name="" id="txtUserName">
